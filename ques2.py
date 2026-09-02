@@ -1,3 +1,4 @@
+#taking inputs of 3 numbers from user to check the greatest of all
 num1 = int(input("enter first number"))
 num2 = int(input("enter second number"))
 num3 = int(input("enter third number"))

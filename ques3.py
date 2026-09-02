@@ -1,12 +1,15 @@
 # write a python program that accepts the length of three sides of a traiangle as inputs.
 # The program should indicate wether or not the traingle is a right angled triangle using function.
 
+#defining function 
 def triangle():
-
+    #taking three sides of triangele from user
     a = int(input("enter first side of triangle: "))
     b = int(input("enter second side of triangle: "))
     c = int(input("enter third side of triangle: "))
+    # for traingle to be right angled greater side*greater side = sum of squares of two smaller sides
 
+    #finding the greatest side
     if a > b and a > c:
         greatest = a
 
@@ -17,6 +20,8 @@ def triangle():
         greatest = c
 
     larger_side = greatest*greatest
+
+    #checking if traingle is right angled or not
     if greatest==a:
         if larger_side == b*b + c*c:
             print("RIGHT ANGLED TRIANGLE")
@@ -32,5 +37,5 @@ def triangle():
             print("RIGHT ANGLED TRIANGLE")
         else:
              print("NOT A RIGHT ANGLED TRAINGLE")
-
+#calling the function
 triangle()
